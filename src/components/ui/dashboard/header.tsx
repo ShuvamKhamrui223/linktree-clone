@@ -1,6 +1,9 @@
+import { PlusIcon } from "lucide-react";
+import Link from "next/link";
+
 const DashboardHeader = () => {
   return (
-    <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-lg gap-md">
+    <header className="w-full flex flex-col md:flex-row justify-between items-start md:items-center mb-lg gap-md">
       <div>
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
           Manage Links
@@ -9,9 +12,9 @@ const DashboardHeader = () => {
           Organize and track your content performance.
         </p>
       </div>
-      <button className="bg-[#6366F1] text-white font-button text-button py-sm px-md rounded-lg flex items-center gap-sm hover:opacity-90 transition-opacity card-shadow">
-        <span className="material-symbols-outlined">add</span> Add Link
-      </button>
+      <Link href={"/dashboard/add-link"} className="bg-surface-tint text-surface font-button text-button py-sm px-md rounded-lg flex items-center gap-sm hover:opacity-90 transition-opacity card-shadow cursor-pointer">
+        <PlusIcon /> Add Link
+      </Link>
     </header>
   );
 };

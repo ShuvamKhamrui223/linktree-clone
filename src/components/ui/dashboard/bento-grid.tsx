@@ -1,10 +1,10 @@
 const BentoGrid = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-md">
+    <section className="grid grid-cols-1 xl:grid-cols-3 gap-md">
       {/* <!-- Left Column: Link List (Takes up 2 columns on XL screens) --> */}
       <div className="xl:col-span-2 space-y-sm">
         {/* <!-- Link Card 1 --> */}
-        <div className="bg-white rounded-[16px] p-md card-shadow card-hover transition-all duration-200 border border-transparent hover:border-[#6366F1] flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden">
+        <div className="bg-white rounded-2xl p-md card-shadow card-hover transition-all duration-200 border border-transparent hover:border-[#6366F1] flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden">
           <div className="flex-1 min-w-0 w-full">
             <div className="flex items-center justify-between mb-xs">
               <h3 className="font-headline-md text-body-lg font-semibold text-on-surface truncate pr-4">
@@ -67,7 +67,7 @@ const BentoGrid = () => {
           </div>
         </div>
         {/* <!-- Link Card 2 --> */}
-        <div className="bg-white rounded-[16px] p-md card-shadow card-hover transition-all duration-200 border border-transparent hover:border-[#6366F1] flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden">
+        <div className="bg-white rounded-2xl p-md card-shadow card-hover transition-all duration-200 border border-transparent hover:border-[#6366F1] flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden">
           <div className="flex-1 min-w-0 w-full">
             <div className="flex items-center justify-between mb-xs">
               <h3 className="font-headline-md text-body-lg font-semibold text-on-surface truncate pr-4">
@@ -133,10 +133,10 @@ const BentoGrid = () => {
           </div>
         </div>
         {/* <!-- Link Card 3 (Inactive) --> */}
-        <div className="bg-white/60 rounded-[16px] p-md card-shadow border border-outline-variant/30 flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden opacity-75">
+        <div className="bg-white/60 rounded-2xl p-md card-shadow border border-outline-variant/30 flex flex-col sm:flex-row gap-md items-start sm:items-center group relative overflow-hidden opacity-75">
           <div className="flex-1 min-w-0 w-full">
             <div className="flex items-center justify-between mb-xs">
-              <h3 className="font-headline-md text-body-lg font-semibold text-on-surface truncate pr-4 line-through text-on-surface-variant">
+              <h3 className="font-headline-md text-body-lg font-semibold text-on-surface truncate pr-4 line-through">
                 Old Campaign Link
               </h3>
               {/* <!-- Toggle Switch (Mobile view inline) --> */}
@@ -268,7 +268,7 @@ const BentoGrid = () => {
           </div>
         </div>
       </aside>
-    </div>
+    </section>
   );
 };
 
