@@ -2,7 +2,7 @@ const PricingCards = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
       {/* <!-- Free Tier --> */}
-      <div className="bg-surface-container-lowest rounded-[16px] p-[24px] shadow-level-1 hover:shadow-level-2 border border-outline-variant transition-all duration-200 hover:-translate-y-[2px] hover:border-primary flex flex-col h-full">
+      <div className="bg-surface-container-lowest rounded-2xl p-[24px] shadow-level-1 hover:shadow-level-2 border border-outline-variant transition-all duration-200 hover:-translate-y-[2px] hover:border-primary flex flex-col h-full">
         <div className="mb-6">
           <h2 className="font-headline-md text-headline-md text-on-background">
             Free

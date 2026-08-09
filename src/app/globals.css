@@ -135,9 +135,11 @@
 .dashboard-link {
   @apply bg-surface-tint text-surface capitalize p-2 rounded-md text-sm flex items-center w-fit
 }
-.sign-out-link{
+
+.sign-out-link {
   @apply bg-red-600 hover:bg-red-500 capitalize text-surface w-full rounded-md p-1 cursor-pointer
 }
+
 .card-shadow {
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);
 }
@@ -194,4 +196,29 @@
 
 .ambient-glow {
   background: radial-gradient(circle at center, rgba(79, 70, 229, 0.15) 0%, rgba(11, 19, 38, 0) 70%);
+}
+
+/* pricing table */
+.cl-pricingTable {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 items-start
+}
+
+.cl-pricingTableCard {
+  @apply bg-surface-container-lowest rounded-2xl p-[24px] hover:shadow-2xl border border-outline-variant transition-all duration-200 hover:-translate-y-0.5 flex flex-col h-full;
+
+  &:nth-child(2) {
+    @apply bg-surface-container-lowest rounded-2xl p-[24px] hover:shadow border-2 border-primary relative flex flex-col h-full
+  }
+}
+
+.cl-pricingTableCardTitle {
+  @apply text-headline-md text-on-background
+}
+
+.cl-pricingTableCardDescription {
+  @apply text-body-sm text-on-surface-variant mt-2
+}
+
+.cl-pricingTableCardFooterButton {
+  @apply w-full bg-primary text-on-primary text-button py-3 rounded-lg hover:bg-primary-container transition-colors mb-8
 }

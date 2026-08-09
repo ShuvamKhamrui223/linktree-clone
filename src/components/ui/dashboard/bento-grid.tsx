@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const BentoGrid = () => {
   return (
     <section className="grid grid-cols-1 xl:grid-cols-3 gap-md">
@@ -262,9 +264,9 @@ const BentoGrid = () => {
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-4 max-w-50">
               Unlock custom domains, advanced analytics, and premium themes.
             </p>
-            <button className="bg-tertiary text-on-tertiary font-button text-button py-2 px-4 rounded-lg w-fit hover:opacity-90 transition-opacity text-sm">
+            <Link href={`/dashboard/upgrade`} className="bg-tertiary text-on-tertiary font-button text-button py-2 px-4 rounded-lg w-fit hover:opacity-90 transition-opacity text-sm">
               See Plans
-            </button>
+            </Link>
           </div>
         </div>
       </aside>

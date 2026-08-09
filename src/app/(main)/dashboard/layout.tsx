@@ -15,7 +15,7 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
     <>
       {/* <div className="grid grid-cols-6 md:grid-cols-12 grid-rows-1"> */}
         {/* <Sidebar /> */}
-        <main className="overflow-y-auto bg-surface dark:bg-background w-full py-4 ">
+        <main className="min-h-dvh bg-surface dark:bg-background w-full py-4">
           {children}
         </main>
       {/* </div>   */}

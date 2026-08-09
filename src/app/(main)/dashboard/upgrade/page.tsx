@@ -1,12 +1,23 @@
+import PreLoader from "@/components/ui/layout/preloader";
 import PricingHeader from "@/components/ui/pricing/header";
-import PricingCards from "@/components/ui/pricing/pricing-cards";
+import { PricingTable } from "@clerk/nextjs";
+import { Suspense } from "react";
 
 const page = () => {
   return (
-    <>
+    <section className="app-padding">
       <PricingHeader />
-      <PricingCards />
-    </>
+      <Suspense
+        fallback={
+          <>
+            <PreLoader />
+          </>
+        }
+      >
+        <PricingTable ctaPosition="bottom" />
+      </Suspense>
+      {/* <PricingCards /> */}
+    </section>
   );
 };
 
